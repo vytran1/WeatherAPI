@@ -13,9 +13,10 @@
 1. **Clone the repository**:
   - git clone https://github.com/vytran1/WeatherAPI.git
 2. **Importing this project into IDE like Spring Tool Suite, IntelliJ, Eclipse, etc**.
-3. **Configure application properties**:
+3. **Configure database**:
+  - Create a database with the name called weatherdb  
   - Go to src/main/resources/application.yml or application.properties
-  - Configure your own database credentials
+  - Configure your own database credentials like username password
 4. **Configure RSA Key pair**:
   - Opening WeatherAPIService and delete certs folder in path /src/main/resources/certs
   - Opening terminal for WeatherAPIService project
