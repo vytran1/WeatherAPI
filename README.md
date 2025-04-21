@@ -10,13 +10,13 @@
 - Using HATEOAS to add links to response of some api. These links help developers and users explore other aspects of one API more easily.
 - Writing API document with swagger tool
 ## Running Project Steps
-1 **Clone the repository**:
+1. **Clone the repository**:
   git clone https://github.com/vytran1/WeatherAPI.git
-2 **Importing this project into IDE like Spring Tool Suite, IntelliJ, Eclipse, etc**.
-3 **Configure application properties**:
+2. **Importing this project into IDE like Spring Tool Suite, IntelliJ, Eclipse, etc**.
+3. **Configure application properties**:
   - Go to src/main/resources/application.yml or application.properties
   - Configure your own database credentials
-4 **Configure RSA Key pair**:
+4. **Configure RSA Key pair**:
   - Opening WeatherAPIService and delete certs folder in path /src/main/resources/certs
   - Opening terminal for WeatherAPIService project
   - Typing command `openssl genrsa -out keypair.pem 2048`. This command will generate a rsa key pair file which contains private key and public key.
