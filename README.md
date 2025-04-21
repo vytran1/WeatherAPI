@@ -1,9 +1,17 @@
 # WeatherAPI
-## Goals: After some projects in my school, I realized my backend skills are still weak and have some limitations. These think stop at something like CRUD basic, implementing security with type Usernamepassword with spring security integrating with thymeleaf or with spring security providing JWT, implementing social login and I don't know how to cache API with the aim of optimizing performance of the system or implement oauth2 authentication. All of these reasons led me to do this project.
+## Goals: After completing several projects in school, I realized that my backend skills were still limited. Most of my knowledge stopped at basic CRUD operations, basic security implementations using Spring Security with username/password (integrated with Thymeleaf or JWT), and social login. However, I lacked experience in more advanced topics such as caching APIs to improve performance or implementing OAuth2 authentication. For these reasons, I decided to build this project.
 ## Project Description
 - This project will provide weather information with four different types which are hour weather, realtime weather, daily weather and full weather in specific location.
 - The architecture used in this project is MVC
 - This project have three sub projects and I will explain functions of these later.
+## Used Technologies
+- Java 21
+- Spring Boot 3.3.2
+- Spring Security
+- Spring Data JPA
+- Spring Cache
+- MySQL Database
+- Swagger tool for writing API Documents
 ## New Features 
 - Implementing Oauth2 Authentication with clientId, clientSecret, Registered Server, Authentication Server, Resource Server.
 - Using spring cache to cache result from APIs
@@ -27,5 +35,11 @@
 5. **Running Test**:
    - Running tests in the WeatherAPIClientManager project which are `testAddAdminUser`, `testAddClientUser`, `testAddSystemApp`, `testAddReaderApp` in `/src/test/
    - Running tests in the WeatherAPIService project.
-    
+## Purpose Of Each Sub Projects
+### WeatherAPICommon
+   - This project contain all entities, their relationship configuration and share these entities to WeatherAPIClientManager and WeatherAPIServie projects.
+### WeatherAPIClientManager
+   - This module allows developers to register an account and create applications in order to receive a client ID and client secret, which are required to access the weather API services.
+### WeatherAPIService
+   - Once users have obtained their client ID and client secret from the WeatherAPIClientManager project, they can send these credentials to the WeatherAPIService to obtain an access token. This token must then be included in each request to access weather data. 
    
