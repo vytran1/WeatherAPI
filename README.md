@@ -11,7 +11,7 @@
 - Writing API document with swagger tool
 ## Running Project Steps
 1. **Clone the repository**:
-  git clone https://github.com/vytran1/WeatherAPI.git
+  - git clone https://github.com/vytran1/WeatherAPI.git
 2. **Importing this project into IDE like Spring Tool Suite, IntelliJ, Eclipse, etc**.
 3. **Configure application properties**:
   - Go to src/main/resources/application.yml or application.properties
