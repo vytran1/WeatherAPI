@@ -42,4 +42,10 @@
    - This module allows developers to register an account and create applications in order to receive a client ID and client secret, which are required to access the weather API services.
 ### WeatherAPIService
    - Once users have obtained their client ID and client secret from the WeatherAPIClientManager project, they can send these credentials to the WeatherAPIService to obtain an access token. This token must then be included in each request to access weather data. 
-   
+## Example Testing Project
+ - Get Access Token With Client Id And Client Secret
+![image](https://github.com/user-attachments/assets/6bd53678-4f2a-47ff-84a7-b8afe08a2adb)
+ - Access Resources with access token
+![image](https://github.com/user-attachments/assets/69e8fa78-dcdb-484f-93bb-009f239e6a55)
+ 
+
