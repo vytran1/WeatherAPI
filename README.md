@@ -29,9 +29,10 @@
 4. **Configure RSA Key pair**:
   - Opening WeatherAPIService and delete certs folder in path /src/main/resources/certs
   - Opening terminal for WeatherAPIService project
-  - Typing command `openssl genrsa -out keypair.pem 2048`. This command will generate a rsa key pair file which contains private key and public key.
-  - Typing openssl `openssl rsa -in keypair.pem -pubout -out public.pem`. This command will extract public key from the rsa key pair file to a separate file. The public key is used for providing API access token.
-  - Typing command `openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out private.pem `. This command will extract private key from the rsa key pair file to a separate file. The private key is used for verified the API access token.
+  - Typing command `openssl genrsa -out keypair.pem 2048`. This command will generate an RSA key pair file which contains both private and public keys.
+  - Typing command `openssl rsa -in keypair.pem -pubout -out public.pem`. This command will extract the public key from the RSA key pair file to a separate file. The public key is used for verifying the API access token.
+  - Typing command `openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out private.pem`. This command will extract the private key from the RSA key pair file and convert it to the PKCS8 format. The private key is used for signing and verifying the API access token.
+
 5. **Running Test**:
    - Running tests in the WeatherAPIClientManager project which are `testAddAdminUser`, `testAddClientUser`, `testAddSystemApp`, `testAddReaderApp` in `/src/test/
    - Running tests in the WeatherAPIService project.
